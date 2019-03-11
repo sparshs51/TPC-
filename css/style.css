@@ -47,6 +47,41 @@ body {
   font-weight: normal;
   color: #777777; }
 
+.owl-next, 
+.owl-prev {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 33.33333333%;
+}
+.owl-next {
+  right: -5%;
+}
+.owl-prev {
+  left: -5%;
+}
+.owl-next:hover .fa-angle-right, 
+.owl-prev:hover .fa-angle-left {
+  background: #f9f9f9;
+  color: #333333;
+}
+.owl-nav span {
+  background: rgba(255, 255, 255, .6);
+  color: rgba(0, 0, 0, .3);
+  font-family: 'FontAwesome';
+  font-size: 40px;
+  line-height: 60px;
+  margin-top: -30px;
+  position: absolute; top: 45%;
+  text-align: center;
+  width: 60px; height: 60px;
+}
+
+.fa-angle-left{ left: 0; }
+.fa-angle-left:before { content: "\f053"; }
+.fa-angle-right { right: 0; }
+.fa-angle-right:before { content: "\f054"; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 500;
