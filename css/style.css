@@ -40,6 +40,9 @@ Table of Content:
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+
+
+
 body {
   line-height: 24px;
   font-size: 16px;
@@ -492,13 +495,16 @@ a {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .home_banner_area {
-  background: url(../img/banner/banner.png) no-repeat center bottom;
-  position: relative;
-  z-index: 1;
-  height: 720px; }
+ background: url(../img/banner/banner.png) no-repeat center bottom;
+    position: relative;
+    z-index: 1;
+    height: 620px;
+      margin-top: 100px;}
   @media (max-width: 992px) {
     .home_banner_area {
-      height: 600px; } }
+      background: url(../img/banner/banner-md.png) no-repeat center bottom;
+      height: 600px; 
+      } }
   .home_banner_area .banner_inner {
     position: relative;
     width: 100%;
@@ -840,6 +846,7 @@ a {
     background: url(../img/banner-bg.jpg) no-repeat center bottom;
     background-size: auto;
     z-index: 1; }
+
     .banner_area .banner_inner .overlay {
       background: rgba(0, 0, 0, 0.42);
       position: absolute;
@@ -2036,8 +2043,7 @@ a {
 @media (max-width: 767px) {
   .element-wrap {
     margin-top: 30px; } }
-b, sup, sub, u, del {
-  color: #f8b600; }
+
 
 h1 {
   font-size: 36px; }
@@ -3222,6 +3228,37 @@ h6 {
 /* =================================== */
 /*  Footer Styles
 /* =================================== */
+
+footer i{
+  float: left;
+}
+footer p{
+  display: table;
+}
+h1.title:before, .section-title h2.title:before, .section-title h3.title:before, .section-title h4.title:before, .section-title h5.title:before, .section-title h6.title:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: #3face4;
+}
+
+footer .title {
+    position: relative;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+@media (min-width: 576px) {
+  footer * {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 /*.footer-area {
   background-color: #222222; }
   .footer-area .footer-nav li {
@@ -3392,20 +3429,6 @@ h6 {
 
 .footer .navbar-expand-md .navbar-nav .nav-link { padding-left: 1rem; padding-right: 1rem; }
 
-@media (max-width: 992px) {
-  .footer-about {
-    display: none;
-  }
-  .footer-tab1, .footer-tab2 {
-    display: none;
-  }
-  .footer-contact {
-  text-align: -webkit-center;
-  }
-  .footer-menu {
-    display: none;
-  }
-}
 
 
 /*# sourceMappingURL=style.css.map */
