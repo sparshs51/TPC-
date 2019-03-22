@@ -279,6 +279,17 @@ a {
     .owl-dots .owl-dot.active {
       background: #000000; }
 
+
+
+      /*Carousel */
+      .about_myself .carousel-item img{
+        max-height: 370px;
+      }
+      .about_myself .carousel-item p{
+        text-align: center;
+        font-style: italic;
+      }
+
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .top_menu {
@@ -325,7 +336,9 @@ a {
     .top_menu .right_side li a i {
       margin-right: 15px;
       color: #3face4; }
-
+.main_menu{
+          box-shadow: 0px 13px 20px 0px #1111111c;
+}
 .header_area {
   position: absolute;
   width: 100%;
@@ -478,6 +491,7 @@ a {
       .header_area .navbar .cart i {
         font-weight: 600; }
   .header_area.navbar_fixed .main_menu {
+
     position: fixed;
     width: 100%;
     top: -70px;

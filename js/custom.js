@@ -1,6 +1,6 @@
 ; (function ($) {
     "use strict"
-    var nav_offset_top = $('.header_area').height() + 50;
+    var nav_offset_top = $('.top_menu').height() ;
     /*-------------------------------------------------------------------------------
 	  Navbar 
     -------------------------------------------------------------------------------*/
@@ -11,21 +11,15 @@
             $(window).scroll(function () {
                 var scroll = $(window).scrollTop();
                 if (scroll >= nav_offset_top) {
-                    $(".header_area").addClass("navbar_fixed");
+                    $(".main_menu").addClass("fixed-top");
                     $('#searchInput').fadeOut();
                 } else {
-                    $(".header_area").removeClass("navbar_fixed");
+                    $(".main_menu").removeClass("fixed-top");
                 }
             });
         };
     };
     navbarFixed();
-
-    // Search Button
-    $('#searchInput').hide();
-    $('.search_btn').on('click', function() {
-        $('#searchInput').fadeToggle(750);
-    });
 
 
     //--------  Carousel --------// 
