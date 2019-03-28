@@ -39,8 +39,6 @@ Table of Content:
       flex: 0 0 50%; } }
 
 /*---------------------------------------------------- */
-/*----------------------------------------------------*/
-
 
 
 body {
@@ -140,9 +138,11 @@ button:focus {
 
 a {
   text-decoration: none;
+  color: #97a8da;
   transition: all 0.3s ease-in-out; }
   a:hover, a:focus {
     text-decoration: none;
+    font-size: 1.1rem;
     outline: none; }
 
 .row.m0 {
@@ -280,6 +280,13 @@ a {
       background: #000000; }
 
 
+h1,h2,h3{
+  border-bottom: 1px solid #447ea785;
+}
+
+#facilities li{
+    text-decoration: underline;
+}
 
       /*Carousel */
       .about_myself .carousel-item img{
@@ -3246,9 +3253,18 @@ h6 {
 footer i{
   float: left;
 }
-footer p{
-  display: table;
+.footer-tab2 a{
+  color: #6c757d ;
+  transition: all 0.2s ease-in-out;
 }
+.footer-tab2 a:hover{
+  color: #fff ;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  text-decoration: underline;
+}
+
+
 h1.title:before, .section-title h2.title:before, .section-title h3.title:before, .section-title h4.title:before, .section-title h5.title:before, .section-title h6.title:before {
     content: "";
     position: absolute;
@@ -3268,7 +3284,6 @@ footer .title {
 
 @media (min-width: 576px) {
   footer * {
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
@@ -3409,14 +3424,14 @@ footer .title {
 .footer-about p a { color: #aaa; border-bottom: 1px dashed #666; }
 .footer-about p a:hover, .footer-about p a:focus { color: #fff; border-color: #aaa; }
 
-.footer-contact p { word-wrap: break-word; }
+.footer-contact p { word-wrap: break-word; font-size: 16px;}
 .footer-contact i { padding-right: 10px; font-size: 18px; color: #666; }
-.footer-contact p a { color: #aaa; border-bottom: 1px dashed #666; }
+.footer-contact p a { color: #aaa; border-bottom: 1px dashed #666;  }
 .footer-contact p a:hover, .footer-contact p a:focus { color: #fff; border-color: #aaa; }
 
 
-.footer-tab1 p { word-wrap: break-word; }
-.footer-tab2 p { word-wrap: break-word; }
+.footer-tab1 p { word-wrap: break-word; font-size: 16px; }
+.footer-tab2 p { word-wrap: break-word; font-size: 16px;}
 .footer-tab1 i { padding-right: 10px; font-size: 18px; color: #666; }
 .footer-tab2 i { padding-right: 10px; font-size: 18px; color: #666; }
 .footer-tab1 p a { color: #aaa; border-bottom: 1px dashed #666; }
@@ -3445,4 +3460,3 @@ footer .title {
 
 
 
-/*# sourceMappingURL=style.css.map */
